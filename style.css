@@ -1,0 +1,33 @@
+.container {
+    display: grid;
+    grid-gap:1px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 900px 50px;
+}
+
+.header {
+    background-image: url(./images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px 50%;
+    /** The below script lets the header span across the entire first row, the header will start at the 1st column row and end at the 3rd column line.**/
+    grid-column: 1 / -1;
+}
+
+.content {
+    grid-column: 1 / -1;
+}
+
+.footer {
+    background-color: orange;
+    /** 
+    The below script lets the footer span across the entire first row, 
+    the footer will start at the 1st column row and end at the 3rd column line.
+    (just like the header). 
+    grid-column: 1 / 3;
+    This is short hand for:
+    grid-column-start: 1; 
+    grid-column-end: 3;
+    **/
+    grid-column: 1 / -1;
+}
