@@ -1,5 +1,6 @@
 .main-content{
-    width: 100%;
+    width: 900px;
+    height:fit-content;
 }
 
 
@@ -27,6 +28,7 @@
 .main-standout{
     display:flex;
     align-items: center;
+    justify-content: center;
 }
 
 .main-standout>*{
@@ -67,26 +69,43 @@
 }
 
 
-.testimonials{
-    display: flex;
+.testimonial-flex{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    grid-column: 1/-1;
-    
+    position: relative;
 }
 
-.testimonials>*{
-    flex:1 1 1;
-}
 
 .testimonial1{
-    align-content: flex-start;
+    display: flex;
+    align-self: flex-start;
 }
 
 .testimonial2{
-    align-content: center;
+    display: flex;
+    align-self: center;
+  
 }
 
-.testimonial1{
-    align-content: flex-end;
+.testimonial3{
+    display: flex;
+    align-self: flex-end;
+    
 }
 
+.bottom-img{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.nav-div{
+    justify-content: end;
+}
+
+.nav-footer{
+    justify-content: center;
+}
