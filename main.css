@@ -1,3 +1,9 @@
+.main-content{
+    width: 100%;
+}
+
+
+
 /*Main-transform display*/
 .main-transform{
     display: flex;
