@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     align-content: center;
+    
 }
 
 .main-transform >*{
@@ -59,7 +60,8 @@
 .main-testimonials{
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 1fr);
+    width: auto;
     
 }
 
@@ -74,25 +76,27 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: relative;
+    width: auto;
 }
 
 
 .testimonial1{
-    display: flex;
     align-self: flex-start;
+    word-wrap: break-word;
+    font-size: 16px;
+    position: relative;
 }
 
 .testimonial2{
-    display: flex;
     align-self: center;
-  
+    word-wrap: break-word;
+    font-size: 16px;
 }
 
 .testimonial3{
-    display: flex;
     align-self: flex-end;
-    
+    word-wrap: break-word;
+    font-size: 16px;
 }
 
 .bottom-img{

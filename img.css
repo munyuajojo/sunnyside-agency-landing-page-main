@@ -1,8 +1,5 @@
 @media only screen and (max-width: 400px) {
-    header {
-        background-image: url(./images/desktop/image-header.jpg);  
-        background-size: auto;
-      }
+    
 
           img[src="./images/desktop/image-transform.jpg"]{
             width: 50%;
@@ -19,10 +16,6 @@
 
 /*Min Screen*/
 @media only screen and (min-width: 400px) {
-    header {
-        background-image: url(./images/desktop/image-header.jpg);  
-        background-size: 50% 50%;
-      }
 
           img[src="./images/desktop/image-transform.jpg"]{
             width: 50%;
@@ -38,4 +31,41 @@
   }
  
   
+img[src="./images/image-emily.jpg"]{
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 20%;
+    position: relative;
+    left:120px;
+    
+}
 
+img[src="./images/image-thomas.jpg"]{
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 20%;
+    position: relative;
+    left:120px;
+}
+
+img[src="./images/image-jennie.jpg"]{
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 20%;
+    position: relative;
+    left:120px;
+}
+
+img[src="./images/desktop/image-header.jpg"]{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+    display:block;
+}
