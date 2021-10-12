@@ -1,111 +1,249 @@
-.main-content{
+.content-flex{
+    display: flex;
     width: 900px;
     height:fit-content;
+    flex-direction: column;
 }
 
+.content-flex> .transform-content{
+    flex: 1;
+}
 
+.content-flex> .standout-content{
+    flex: 1;
+}
+
+.content-flex> .content-graphic-photography{
+    flex: 1;
+
+}
+.content-flex> .testimonials-content{
+    flex: 1;
+}
+
+.content-flex> .bottom-img-content{
+    flex: 1;
+}
 
 /*Main-transform display*/
-.main-transform{
+.transform-content{
     display: flex;
+    flex-direction: row;
     align-items: center;
     align-content: center;
+    height: 70%;
+}
+
+.transform-content> .transform{
+    flex:1;
     
 }
 
-.main-transform >*{
-    flex:1 1;
+.transform-content> .transform-img{
+    flex:1;
 }
 
 .transform{
     align-items: flex-start;
+    height: 200px;
 }
 
 .transform-img{
-    background-position: center;
+        align-items: center;
+        background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg);
+        background-position: center 10%;
+        background-repeat: no-repeat;
+        background-size:cover;
+    
 }
 
 /*Main-standout display*/
-.main-standout{
-    display:flex;
+.standout-content{
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    align-content: center;
+    height: 70%;
+}
+
+.standout-content> .standout-img{
+    flex:1;
+
+}
+
+.standout-content> .standout{
+    flex:1;
+}
+.standout-img {
+    align-items: center;
+    background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg);
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size:200px 200px;
+}
+
+.standout{
     justify-content: center;
 }
 
-.main-standout>*{
-    flex:1 1;
-}
-
-.standout-img {
-    background-position: center;
-}
-
 /*Main-graphic display*/
-.main-graphic-photography{
+.content-graphic-photography{
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
-.main-graphic-photography>*{
-    flex:1 1;
+.content-graphic-photography>.main-graphic{
+    flex:1;
 }
 .main-graphic{
     background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: flex-end;
+    height: 300px;
 }
 
+.photography-h2{
+    top:100px;
+}
+
+.photography-p2{
+    top:200px;
+}
+.content-graphic-photography>.main-photography{
+    flex:1;
+}
 .main-photography{
     background-image: url(./images/desktop/image-photography.jpg);
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 300px;
 }
 
 /*Main-testimonials*/
-.main-testimonials{
+.testimonials-content{
     display: grid;
     align-items: center;
     grid-template-rows: repeat(2, 1fr);
-    width: auto;
+    
     
 }
 
 .main-testimonial-heading{
     grid-column: 1 / -1;
     align-items: center;
+    
 }
 
-
+.testimonials{
+    grid-column: 1 / -1;
+    align-items: center;
+    height: 200px;
+}
 .testimonial-flex{
     display:flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: auto;
+    height: 200px;
+
 }
 
+.testimonial-flex > .testimonial1{
+    flex:1;
+}
+
+.testimonial-flex > .testimonial2{
+    flex:1;
+}
+
+.testimonial-flex > .testimonial3{
+    flex:1;
+}
 
 .testimonial1{
-    align-self: flex-start;
-    word-wrap: break-word;
-    font-size: 16px;
-    position: relative;
+    align-items: flex-start;
+    width: 300px;
+
 }
 
 .testimonial2{
-    align-self: center;
-    word-wrap: break-word;
-    font-size: 16px;
+    align-items: center;
+    
 }
 
 .testimonial3{
-    align-self: flex-end;
-    word-wrap: break-word;
-    font-size: 16px;
+    align-items: flex-end;
+    
 }
 
-.bottom-img{
+
+.testimonial-p{
+    font-size: 13px;
+    word-wrap: break-word;
+}
+
+.testimonial-name, .testimonial-title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+.bottom-img-content{
     display:flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 
 }
 
+
+.bottom-img-content > .img-1 {
+    flex:1;
+}
+.bottom-img-content > .img-2 {
+    flex:1;
+}
+.bottom-img-content > .img-3 {
+    flex:1;
+}
+.bottom-img-content > .img-4 {
+    flex:1;
+}
+
+.img-1{
+    background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-gallery-milkbottles.jpg) 200px 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    
+}
+
+.img-2{
+    background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-gallery-orange.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}
+
+.img-3{
+    background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-gallery-cone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}
+
+.img-4{
+    background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-gallery-sugarcubes.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+}
 .nav-div{
     justify-content: end;
 }

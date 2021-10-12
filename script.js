@@ -1,0 +1,1 @@
+document.getElementsByClassName("transform-img").style.backgroundImage = "url('../sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg')";

@@ -3,7 +3,7 @@
     display: grid;
     grid-gap:1px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 200px auto 50px;
+    grid-template-rows: 400px auto 50px;
     grid-template-areas: 
     "h h h h h h h h h h h h"
     "c c c c c c c c c c c c"
@@ -12,16 +12,16 @@
 }
 
 .header {
-    background-image: url(./images/desktop/image-header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+
     /** The below script lets the header span across the entire first row, the header will start at the 1st column row and end at the 3rd column line.**/
     grid-area: h;
-
+    margin-bottom: 50px;
+    padding: 50px;
 }
 
 .content {
     grid-area: c;
+    height:auto;
 }
 
 .footer {
@@ -29,6 +29,8 @@
     grid-area: f;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    
 }
 
 
@@ -64,11 +66,7 @@ p{
     font-weight:100;
 
 }
-.name, .title {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+
 /*Nav*/
 li,a {
     font-family: 'Barlow', sans-serif;
