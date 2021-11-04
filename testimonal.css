@@ -1,0 +1,63 @@
+.testimonials{
+    display:grid;
+
+    grid-template-areas: 
+  "testimonials-heading testimonials-heading testimonials-heading"
+  "testimonials-img1 testimonials-img2 testimonials-img3"
+  "testimonials1 testimonials2 testimonials3";
+ 
+}
+
+.testimonials-heading{ 
+    grid-area: testimonials-heading;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.testimonials-img1{
+    grid-area: testimonials-img1;
+    background-image: url(./images/image-emily.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+}
+
+.testimonials-img2{
+    grid-area: testimonials-img2;
+    background-image: url(./images/image-thomas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:120px 120px;
+    width: 200px;
+    height: 200px;
+}
+
+.testimonials-img3{
+    grid-area: testimonials-img3;
+    background-image: url(./images/image-jennie.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:100px 100px;
+    width: 200px;
+    height: 200px;
+    
+}
+
+
+.testimonials1{
+    grid-area: testimonials1;
+
+}
+
+.testimonials2{
+    grid-area: testimonials2;
+    
+}
+
+
+.testimonials3{
+    grid-area: testimonials3;
+    
+}

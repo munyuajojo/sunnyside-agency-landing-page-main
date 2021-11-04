@@ -46,14 +46,16 @@
 .transform{
     align-items: flex-start;
     height: 200px;
+    background-position: left 20%;
+    
 }
 
 .transform-img{
         align-items: center;
-        background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg);
-        background-position: center 10%;
+        background-image: url(./images/desktop/image-transform.jpg);
+        background-position: center center;
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size:contain;
     
 }
 
@@ -76,10 +78,10 @@
 }
 .standout-img {
     align-items: center;
-    background-image: url(../sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg);
-    background-position: center 20%;
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size:200px 200px;
+    background-size:contain;
 }
 
 .standout{

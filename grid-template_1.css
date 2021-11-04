@@ -1,0 +1,65 @@
+.content{
+    display:grid;
+    grid-template-areas: 
+  "transform transform transform-img transform-img"
+  "standout-img standout-img  standout standout"
+  "graphic graphic  photography photography"
+  "testimonials testimonials testimonials testimonials"
+  "bottom-images bottom-images bottom-images bottom-images";
+ 
+}
+
+.content-transform{
+    grid-area: transform;
+    
+}
+
+.content-transform-img{
+    grid-area: transform-img;
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.content-standout-img{
+    grid-area:standout-img;
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+}
+
+.content-standout{
+    grid-area:standout;
+}
+
+.content-graphic{
+    grid-area:graphic;
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 370px;
+}
+
+.content-photography{
+    grid-area:photography;
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 370px;
+    justify-content:last baseline;
+    align-items:baseline;
+}
+
+.content-testimonials{
+    grid-area:testimonials;
+}
+
+.content-bottom-images{
+    background-color: chocolate;
+    grid-area:bottom-images;
+}
